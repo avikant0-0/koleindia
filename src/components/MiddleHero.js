@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-// import image1 from "../assets/images/image1.jpg"; // Placeholder image
-// import image2 from "../assets/images/image2.jpg"; // Placeholder image
-// import image3 from "../assets/images/image3.jpg"; // Placeholder image
+
 import image1 from "../assets/images/WeirdOldGuy.jpg"
 import image2 from "../assets/images/WeirdOldGuy.jpg"
 import image3 from "../assets/images/WeirdOldGuy.jpg"
+
 const Hero1Container = styled.div`
   background-color: #121f37;
   padding: 2rem;
@@ -59,7 +58,7 @@ const MiddleHero = () => {
         <ServiceCard style={{
             marginLeft:"100px",
         }}>
-          <ServiceImage src={image1} alt="Daily Shift Reports" />
+          <ServiceImage src="https://media.gettyimages.com/id/1941416412/photo/confident-asian-two-maintenance-engineers-man-inspection-discussstion-with-tablet-at.jpg?b=1&s=2048x2048&w=0&k=20&c=mzlap0dbJ13b6ehBY9nwRDKdZfagbbwBJgL35Z0hjeU=" alt="Daily Shift Reports" />
           <ServiceText>
             <ServiceTitle>Daily Shift Reports</ServiceTitle>
             <ServiceDescription>
@@ -69,7 +68,7 @@ const MiddleHero = () => {
         </ServiceCard>
         
         <ServiceCard>
-          <ServiceImage src={image2} alt="Task Management" />
+          <ServiceImage src="https://media.gettyimages.com/id/1969071961/photo/portrait-senior-electrician-engineer-man-wear-white-hardhat-at-power-station-electrical-plant.jpg?b=1&s=2048x2048&w=0&k=20&c=PO_XXhW15NfmXpena8QF6qCCGoTRALelxMg1yd88WJE=" alt="Task Management" />
           <ServiceText>
             <ServiceTitle>Task Management</ServiceTitle>
             <ServiceDescription>
@@ -81,7 +80,7 @@ const MiddleHero = () => {
         <ServiceCard style={{
             marginRight:"100px",
         }}>
-          <ServiceImage src={image3} alt="Safety Protocol Updates" />
+          <ServiceImage src="https://media.gettyimages.com/id/1283836460/photo/safety-first.jpg?b=1&s=2048x2048&w=0&k=20&c=CzJkKwNerajt35Porg7tnToYEoPblncnTfZRM5rTIcc=" alt="Safety Protocol Updates" />
           <ServiceText>
             <ServiceTitle>Safety Protocol Updates</ServiceTitle>
             <ServiceDescription>
