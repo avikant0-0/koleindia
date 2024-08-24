@@ -4,6 +4,7 @@ import backgroundImage from "../assets/images/coal-mining-production-at-one-of-t
 import NavBar from "./Navbar";
 import Sidebar from "./Sidebar";
 import MiddleHero from "./MiddleHero";
+import Footer from "./Footer";
 
 // Global style to remove default margins and padding
 const GlobalStyle = createGlobalStyle`
@@ -103,6 +104,7 @@ const Hero = () => {
       <MiddleHeroContainer>
         <MiddleHero />
       </MiddleHeroContainer>
+      <Footer/>
     </>
   );
 };
