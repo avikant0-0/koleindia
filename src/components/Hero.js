@@ -3,6 +3,7 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 import backgroundImage from "../assets/images/coal-mining-production-at-one-of-the-open-fields.jpg";
 import NavBar from "./Navbar";
 import Sidebar from "./Sidebar";
+import MiddleHero from "./MiddleHero";
 
 // Global style to remove default margins and padding
 const GlobalStyle = createGlobalStyle`
@@ -11,11 +12,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-  }
+    overflow-x: hidden;  // Disable horizontal overflow
 `;
 
-// Keyframe animation for the fade-in effect
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -58,7 +57,15 @@ const HeroSubtitle = styled.p`
   font-size: 1.5rem;
   opacity: 0;
   animation: ${fadeIn} 2s ease-in forwards;
-  // animation-delay: 2s;
+`;
+
+const MiddleHeroContainer = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background-color: #121f37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Hero = () => {
@@ -67,7 +74,6 @@ const Hero = () => {
 
   useEffect(() => {
     let currentIndex = 0;
-
     const typingEffect = setInterval(() => {
       if (currentIndex < fullText.length - 1) {
         setDisplayedText((prev) => prev + fullText[currentIndex]);
@@ -93,6 +99,10 @@ const Hero = () => {
           </HeroSubtitle>
         </HeroContent>
       </HeroContainer>
+      
+      <MiddleHeroContainer>
+        <MiddleHero />
+      </MiddleHeroContainer>
     </>
   );
 };

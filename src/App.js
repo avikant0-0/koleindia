@@ -7,6 +7,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Hero />} />
+          
         </Routes>
       </div>
     </Router>
